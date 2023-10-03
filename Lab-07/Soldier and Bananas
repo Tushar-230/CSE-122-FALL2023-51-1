@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main(){
+
+int i,w,k,n,total=0;
+scanf("%d %d %d",&k,&n,&w);
+
+
+for(i=1;i<=w;i++){
+
+total=total+i*k;
+
+
+}
+
+
+
+if(n>total || n==total){
+    printf("0");
+}else if(total>n){
+    printf("%d",total-n);
+}
+
+
+return 0;
+}
